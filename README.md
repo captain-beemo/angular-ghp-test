@@ -8,6 +8,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 1.ng build --prod --base-href https://<profile_name>.github.io/<repo_name>/ --deploy-url=https://<profile_name>.github.io/<repo_name>/
 
 2.ngh --dir=dist/<repo_name>
+
+3.Another tiny detail, angular app name is created with camel Case
 ```
 
 [Images are not loading after deploying angular app on github pages - Stack Overflow](https://stackoverflow.com/questions/56379595/images-are-not-loading-after-deploying-angular-app-on-github-pages)
