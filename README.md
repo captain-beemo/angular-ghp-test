@@ -2,15 +2,25 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.
 
-## deploy on github pages
+## deploy angular app on github pages
 
 ```Text
-1.ng build --prod --base-href https://<profile_name>.github.io/<repo_name>/ --deploy-url=https://<profile_name>.github.io/<repo_name>/
+1.npm install -g angular-cli-ghpages
 
-2.ngh --dir=dist/<repo_name>
+2.ng build --prod --base-href https://<profile_name>.github.io/<repo_name>/ --deploy-url=https://<profile_name>.github.io/<repo_name>/
 
-3.Another tiny detail, angular app name is created with camel Case
+3.ngh --dir=dist/<repo_name>
+
+4. .angular-cli.json project name should be the same as <repo_name>
+
+5.git remote repo should be marked as public too, otherwise, it won't be able to post the project.
+
+6.make sure to delete dist folder in the project and gh-pages branch in the remote repo before you go to the through step 1, 2 and 3.
+
 ```
+
+## Links to other project
+[captain-beemo/angular-deploy-demo: The complete angular guide - deploy practice, deploy this angular app on github-pages.](https://github.com/captain-beemo/angular-deploy-demo)
 
 [Images are not loading after deploying angular app on github pages - Stack Overflow](https://stackoverflow.com/questions/56379595/images-are-not-loading-after-deploying-angular-app-on-github-pages)
 
